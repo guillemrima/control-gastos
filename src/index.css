@@ -5,6 +5,7 @@
     --gris: #94a3b8;
     --gris-oscuro: #64748b;
     --negro: #000;
+    --amarillo: #faf54d;
 }
 
 body {
@@ -56,6 +57,10 @@ header h1 {
     text-transform: uppercase;
 }
 
+header h1 span {
+    color: var(--amarillo)
+}
+
 .formulario {
     width: 95%;
     margin: 0 auto;
@@ -97,6 +102,7 @@ header h1 {
     border: none;
     flex: 1;
     font-size: 1.6rem;
+    width: 100%;
 }
 .formulario input[type="submit"] {
     background-color: #1048a4;

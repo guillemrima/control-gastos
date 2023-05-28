@@ -5,7 +5,7 @@
     --gris: #94a3b8;
     --gris-oscuro: #64748b;
     --negro: #000;
-    --amarillo: #faf54d;
+    --amarillo: #0505bb;
 }
 
 body {
@@ -353,6 +353,7 @@ main {
     top: 3rem;
     width: 3rem;
     height: 3rem;
+    z-index: 1;
 }
 .modal .cerrar-modal img {
     width: 100%;
@@ -360,7 +361,7 @@ main {
 
 .modal .formulario {
     max-width: 80rem;
-    width: 40rem;
+    width: 95%;
     transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: ease-in;

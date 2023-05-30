@@ -411,3 +411,19 @@ body .modal {
     font-size: 2.4rem;
     text-align: right;
 }
+
+@media (width <= 600px) {
+    .gasto {
+        flex-direction: column;
+        gap: 0;
+    }
+    .cantidad-gasto {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        background-color: var(--azul);
+        color: var(--blanco);
+        font-size: 4rem;
+        border-radius: 1rem;
+    }
+}

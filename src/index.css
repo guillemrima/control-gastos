@@ -24,8 +24,8 @@ html {
 }
 
 .fijar {
-    overflow: hidden;
     height: 100vh;
+    position: fixed;
 }
 
 h1 {

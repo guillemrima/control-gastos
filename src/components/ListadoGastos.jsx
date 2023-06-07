@@ -4,26 +4,31 @@ const ListadoGastos = ({gastos, setGastoEditar, eliminarGasto, filtro, gastosFil
     console.log(filtro)
     return (
         <div className="listado-gastos contenedor">
-            <h2>{gastos.length ? "Gastos actuales:" : "No hay gastos registrados"}</h2>
             {
                 filtro ? (
-                    gastosFiltrados.map(gasto => (
+                    <>
+                    <h2>{gastosFiltrados.length ? "Gastos actuales:" : "No hay gastos en esta cateroría"}</h2>
+                        {gastosFiltrados.map(gasto => (
+                            <Gasto 
+                                key={gasto.id}
+                                gasto={gasto}
+                                setGastoEditar={setGastoEditar}
+                                eliminarGasto={eliminarGasto}
+                            /> 
+                        ))}
+                    </>
+                ) : 
+                <>
+                <h2>{gastosFiltrados.length ? "Gastos actuales:" : "No hay gastos registrados"}</h2>
+                    {(gastos.map(gasto => (
                         <Gasto 
                             key={gasto.id}
                             gasto={gasto}
                             setGastoEditar={setGastoEditar}
                             eliminarGasto={eliminarGasto}
                         /> 
-                    ))
-                ) : 
-                (gastos.map(gasto => (
-                    <Gasto 
-                        key={gasto.id}
-                        gasto={gasto}
-                        setGastoEditar={setGastoEditar}
-                        eliminarGasto={eliminarGasto}
-                    /> 
-                )))
+                    )))}
+                </>
             }
         </div>
     )

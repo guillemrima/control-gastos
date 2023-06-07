@@ -24,12 +24,12 @@ function App() {
   const [gastosFiltrados, setGastosFiltrados] = useState([])
 
   useEffect(()=> {
-    if(Object.keys(gastoEditar).length > 0)
+    if(Object.keys(gastoEditar).length > 1){
     setModal(true)
 
     setTimeout (() => {
       setAnimarModal(true)
-    }, 300)
+    }, 300)}
   }, [gastoEditar])
 
 

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import Header from './components/header'
 import { generarId} from './helpers'
 import ListadoGastos from './components/ListadoGastos'
 import IconoNuevoGasto from './assets/img/nuevo-gasto.svg'
 import Modal from './components/Modal'
 import Filtros from './components/Filtros'
+import Header from './components/header'
 
 function App() {
 

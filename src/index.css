@@ -340,8 +340,9 @@ main {
 }
 
 .modal {
-    position: absolute;
+    position: fixed;
     background-color: rgb(0 0 0 / 0.92);
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
